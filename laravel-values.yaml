@@ -1,0 +1,16 @@
+appName: laravel
+
+containerPort: 8000
+
+namespace: default
+tier: laravel-backend
+
+serviceName: laravel-service
+containerName: laravel-container
+targetPort: 8000
+servicePort: 8001
+registrySecret: harbor-registry-secret
+
+image:
+  name: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/docker-laravel
+  tag: 9495720880-4
