@@ -36,7 +36,7 @@ jobs:
             echo "Helm repository 'chartmuseum' exists."
           else
             echo "Helm repository 'chartmuseum' does not exist. Adding it now..."
-            helm repo add laravel https://chartmuseum.staging.ignite.dev/ --insecure-skip-tls-verify
+            helm repo add chartmuseum https://chartmuseum.staging.ignite.dev/ --insecure-skip-tls-verify
           fi
         continue-on-error: true
 
